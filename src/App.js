@@ -1,29 +1,20 @@
-import React, { Component } from 'react';
+import React, {PropTypes, Component } from 'react';
 import { Container, Carousel,Row, Col} from "react-bootstrap";
 import { Parallax, Background } from 'react-parallax';
 import './style/Main.scss';
 // import './App.css';
 import Welcome from "./components/Welcome";
 import Header from "./components/layouts/Header";
+import Countdown from "./components/pages/Countdown";
 const image3 ="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/countdown-bg.jpg";
-// import banner from "./img/20773.jpg";
-// const options = {
-//     items: 1,
-//     nav: true,
-//     rewind: true,
-//     autoplay: true
-// };
- 
-// const events = {
-//     onDragged: function(event) {...},
-//     onChanged: function(event) {...}
-// };
+
 class App extends Component {
-    
     render() {
+        const currentDate = new Date();
+        const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
         return ( 
         <div>
-            <Welcome title = "Ricko" dear = "Ricko Prihartanto"judulLagu = "Judul lagu - Penyanyi" ></Welcome> 
+            <Welcome title = "Ricko & Bunga" dear = "Ricko Prihartanto"judulLagu = "Judul lagu - Penyanyi" ></Welcome> 
             <div className="parallax">
              <Header> </Header>
              
@@ -39,7 +30,7 @@ class App extends Component {
                         </Carousel>
                         <div className="bg-black-opacity absolute w-full box-caption-carousel d-flex item-center justify-center flex-column z-10">
                             <div className="d-flex justify-center">
-                                <div className="caption-banner text-center text-white leading-normal"> Ricko & Prihartanto</div>
+                                <div className="caption-banner text-center text-white leading-normal"> Ricko & Bunga</div>
                             </div>
                             <div className="d-flex justify-center">
                                 <div className="text-center sub-caption text-white tracking-widest">WE'RE GETTING MERRIED</div>
@@ -49,7 +40,7 @@ class App extends Component {
                 </section>
 
                 <section className="mb-5">
-                    <Container>
+                    <Container className="px-5">
                         <Row className="d-flex bg-green-light">
                             <Col md="6" className="px-0">
                                 <div className="profile-img w-full">
@@ -86,22 +77,26 @@ class App extends Component {
                     <Parallax bgImage={image3} blur={{ min: -1, max: 3 }}>
                         <div style={{ height: 370 }} className="bg-black-opacity">
                             <div className="insideStyles w-full">
-                                <Row>
-                                    <Col md="4" className="caption-parallax">
-                                        <h2 class="text-6xl">
-                                            <span>We are waiting for....</span>
-                                            The adventure
-                                        </h2>
-                                    </Col>
-                                    <Col md="8"></Col>
-                                </Row>
+                                <Container className="px-5">
+                                    <Row>
+                                        <Col md="5" className="caption-parallax">
+                                            <div>
+                                                <h2 className="text-6xl">
+                                                    <span>We are waiting for....</span><br/>
+                                                    The adventure
+                                                </h2>
+                                            </div>
+                                        </Col>
+                                        <Col md="7" className="flex items-center">
+                                            <Countdown date={`${year}-12-24T00:00:00`}/>
+                                        </Col>
+                                    </Row>
+                                </Container>
                             </div>
                         </div>
                     </Parallax>
                 </section>
              </div>
-
-   
         </div>
 
         );

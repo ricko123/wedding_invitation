@@ -89,11 +89,16 @@ body{
 }
 .caption-parallax{
     font-family: 'GreatVibes';
+    color:$cl_white;
     span{
-        font-size: $size-1_3rem;
+        font-size: $size-1_6rem;
     }
     h2{
         font-size: $size-4rem;
+        p{
+            line-height: normal;
+        }
+        
     }
 }
 .box-caption{
@@ -115,5 +120,31 @@ body{
     position: absolute;
     top: 50%;
     left: 0%;
-    transform: translate(-50%,-50%);
+    // transform: translate(-50%,-50%);
+}
+.row-min7{
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+.padding-set7{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.Countdown{
+
+    .Countdown-col-element {
+        background-color: #F0F0F0;
+        border: 5px solid #D8D8D8;
+        color:#5E9A8E;
+        div{
+            font-family: "Dosis-SemiBold";
+            font-size: $size-2rem;
+            line-height: normal;
+        }
+        span{
+            font-family: "Dosis-Book";
+            font-size: 0.77778rem;
+        }
+    }
 }
