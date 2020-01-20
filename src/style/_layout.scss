@@ -1,0 +1,119 @@
+.welcome{
+    background-image: url('http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/slider/slide-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-white-opacity{
+    background-color: rgba(237, 242, 247,0.5);
+}
+
+.caption-welcome h3{
+    font-size: $size-4rem;
+    margin-bottom: $size-1rem;
+    font-family: 'GreatVibes';
+}
+
+.caption-welcome p{
+    font-size: $size-1rem;
+    font-family: 'Dosis-Book';
+}
+
+.caption-welcome p b{
+    font-family: 'Dosis-SemiBold';
+}
+
+ul.menu{
+    li{
+        font-family:"Dosis-SemiBold";
+        font-size: $size-1rem;
+        padding: 0 $size-1rem;
+        a{
+            text-decoration: $nodecoration;
+        }
+    }
+}
+
+.bg-black-opacity{
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+.box-caption-carousel{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+}
+
+.caption-banner{
+    font-size: $size-4rem;
+    font-family: 'GreatVibes';
+}
+
+.sub-caption{
+    font-size: $size-2rem;
+    font-family: "Dosis-Light";
+    border-top:1px solid $cl_white ;
+    border-bottom:1px solid $cl_white ;
+}
+
+.profile-img{
+    background-image: url('http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/couple/img-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    visibility: visible;
+    animation-name: fadeInLeftSlow;
+    img {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+.bg-green-light{
+    background-color: $bg-green-light;
+}
+.detail-profile{
+    h4{
+        font-size: $size-2rem;
+        font-family: "Dosis-Book";
+        margin-bottom:$size-1rem;
+    }
+    p{
+        font-family: "Dosis-Book";
+        font-size:1.2rem;
+        line-height: 2rem;
+    }
+}
+body{
+    -webkit-perspective: 1px;
+    perspective: 1px;
+}
+.caption-parallax{
+    font-family: 'GreatVibes';
+    span{
+        font-size: $size-1_3rem;
+    }
+    h2{
+        font-size: $size-4rem;
+    }
+}
+.box-caption{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    -webkit-transform: translateZ(-1px);
+    transform: translateZ(-1px);
+}
+
+.insideStyles{
+    // background: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+}

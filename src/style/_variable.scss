@@ -1,0 +1,64 @@
+$font-70 :70px;
+
+$font-50 :50px;
+
+$font-30 :30px;
+
+$font-26 :26px;
+
+$font-16 :16px;
+
+$font-14 :14px;
+
+$font-13 :13px;
+
+$font-12 :12px;
+
+$size-6rem:6rem;
+
+$size-5rem:5rem;
+
+$size-4rem:4rem;
+
+$size-3rem:3rem;
+
+$size-2rem:2rem;
+
+$size-1rem:1rem;
+
+$size-1_3rem:1.3rem;
+
+$cl_white:#fff;
+
+$bg-green-light:#F7FAF9;
+
+$nodecoration:none;
+// mixin
+@mixin font-face($style-name, $file, $family, $category:"") {
+    $filepath: "fonts/" + $family + "/" + $file;
+    @font-face {
+        font-family: "#{$style-name}";
+        src:url($filepath + ".woff") format('woff'), 
+        url($filepath + ".woff") format('woff2'), 
+        // url($filepath + ".ttf")  format('truetype');
+        
+    }
+    %#{$style-name} {
+        font: {
+            @if $category != "" {
+                family: "#{$style-name}", #{$category};
+            }
+            @else {
+                family: "#{$style-name}";
+                weight: normal;
+            }
+        }
+    }
+}
+
+@include font-face('Dosis-SemiBold', 'Dosis-SemiBold', '', 'serif');
+@include font-face('Dosis-Book', 'Dosis-Book', '', 'serif');
+@include font-face('Dosis-Medium', 'Dosis-Medium', '', 'serif');
+@include font-face('Dosis-Bold', 'Dosis-Bold', '', 'serif');
+@include font-face('Dosis-Light', 'Dosis-Light', '', 'serif');
+@include font-face('GreatVibes', 'GreatVibes-Regular', '', 'serif');
