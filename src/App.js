@@ -6,6 +6,7 @@ import './style/Main.scss';
 import Welcome from "./components/Welcome";
 import Header from "./components/layouts/Header";
 import Countdown from "./components/pages/Countdown";
+import swan from "./img/swan.svg";
 const image3 ="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/countdown-bg.jpg";
 
 class App extends Component {
@@ -58,8 +59,8 @@ class App extends Component {
                         </Row>
                         <Row className="d-flex bg-green-light">
                             <Col md="6">
-                                <div className="detail-profile p-5">
-                                    <h4>THE GROOM</h4>
+                                <div className="detail-profile text-right p-5">
+                                    <h4>THE BRIDE</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                     ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -73,6 +74,7 @@ class App extends Component {
                         </Row>
                     </Container>
                 </section>
+
                 <section>
                     <Parallax bgImage={image3} blur={{ min: -1, max: 3 }}>
                         <div style={{ height: 370 }} className="bg-black-opacity">
@@ -95,6 +97,20 @@ class App extends Component {
                             </div>
                         </div>
                     </Parallax>
+                </section>
+
+                <section className="section-padding">
+                    <Container>
+                        <Row>
+                            <Col md="12">
+                                <div className="section-title flex justify-center">
+                                    <div className="icon-swan">
+                                        <img src={swan}/>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </section>
              </div>
         </div>

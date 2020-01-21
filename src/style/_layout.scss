@@ -118,7 +118,7 @@ ul.menu{
     // background: #fff;
     padding: 20px;
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 0%;
     // transform: translate(-50%,-50%);
 }
@@ -130,9 +130,10 @@ ul.menu{
     padding-left: 7.5px;
     padding-right: 7.5px;
 }
-
+.section-padding{
+    padding:120px 0px;
+}
 .Countdown{
-
     .Countdown-col-element {
         background-color: #F0F0F0;
         border: 5px solid #D8D8D8;
@@ -146,5 +147,14 @@ ul.menu{
             font-family: "Dosis-Book";
             font-size: 0.77778rem;
         }
+    }
+}
+
+.icon-swan{
+    width: 65px;
+    img{
+        width: 100%;
+        height: 65px;
+        object-fit: contain;
     }
 }

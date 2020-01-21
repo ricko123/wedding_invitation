@@ -4,7 +4,7 @@ class Welcome extends Component {
   constructor(props) {
     super(props);
     this.state ={
-      welcome:" fixed welcome  left-0 right-0 bottom-0 h-full w-full z-50 d-flex align-items-center"
+      welcome:" fixed welcome invisible opacity-0 left-0 right-0 bottom-0 h-full w-full z-50 d-flex align-items-center"
     }
     this.handlingPopup = this.handlingPopup.bind(this);
   }
