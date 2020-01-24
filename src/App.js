@@ -1,12 +1,15 @@
 import React, {PropTypes, Component } from 'react';
 import { Container, Carousel,Row, Col} from "react-bootstrap";
 import { Parallax, Background } from 'react-parallax';
+// import { faHome } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './style/Main.scss';
 // import './App.css';
 import Welcome from "./components/Welcome";
 import Header from "./components/layouts/Header";
 import Countdown from "./components/pages/Countdown";
 import swan from "./img/swan.svg";
+import bird from "./img/bird.svg";
 const image3 ="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/countdown-bg.jpg";
 
 class App extends Component {
@@ -103,10 +106,63 @@ class App extends Component {
                     <Container>
                         <Row>
                             <Col md="12">
-                                <div className="section-title flex justify-center">
+                                <div className="section-title flex justify-center mb-5">
                                     <div className="icon-swan">
-                                        <img src={swan}/>
+                                        <img src={bird}/>
+                                        <div className="d-flex justify-content-center mt-min-16">
+                                            <div className="line-horizontal"></div>
+                                        </div>
+                                        <div className="d-flex justify-content-center">
+                                            <div className="line-vertikal"></div>
+                                        </div>
+                                        <div className="d-flex justify-content-center">
+                                            <div className="title-swan py-2 px-4">
+                                                <h2>Our Love Story</h2>
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
+                                <div className="story-line">
+                                    <Row>
+                                        <Col md="6" className="col-padding">
+                                            <div className="story-desc text-right">
+                                                <h3>First Meet</h3>
+                                                <div className="date">Jun 09 2019</div>
+                                                <p>A wonderful serenity has taken possession of my entire soul,
+                                                like these sweet mornings of spring which I enjoy with my whole heart.
+                                                I am alone, and feel the charm of existence in this spot,
+                                                which was created for the bliss of souls like mine. I am so happy,
+                                                my dear friend,</p>
+                                            </div>
+                                        </Col>
+                                        <Col md="6" className="col-padding">
+                                            <div className="img-desc">
+                                                <img className="img img-responsive" src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/story/img-1.jpg" alt=""/>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                    <Row className="mt-24">
+                                        <Col md="6" className="col-padding">
+                                            <div className="img-desc">
+                                                <img className="img img-responsive" src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/story/img-1.jpg" alt=""/>
+                                            </div>
+                                            
+                                        </Col>
+                                        <Col md="6" className="col-padding  text-desc">
+                                            <span className="heart rounded-full">
+                                            {/* <FontAwesomeIcon icon={faHome} /> */}
+                                            </span>
+                                            <div className="story-desc">
+                                                <h3>First Meet</h3>
+                                                <div className="date">Jun 09 2019</div>
+                                                <p>A wonderful serenity has taken possession of my entire soul,
+                                                like these sweet mornings of spring which I enjoy with my whole heart.
+                                                I am alone, and feel the charm of existence in this spot,
+                                                which was created for the bliss of souls like mine. I am so happy,
+                                                my dear friend,</p>
+                                            </div>
+                                        </Col>
+                                    </Row>
                                 </div>
                             </Col>
                         </Row>

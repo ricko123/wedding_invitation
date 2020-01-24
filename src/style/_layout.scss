@@ -1,3 +1,7 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 .welcome{
     background-image: url('http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/slider/slide-1.jpg');
     background-position: center;
@@ -130,6 +134,9 @@ ul.menu{
     padding-left: 7.5px;
     padding-right: 7.5px;
 }
+.mt-min-16{
+    margin-top: -16px;
+}
 .section-padding{
     padding:120px 0px;
 }
@@ -151,10 +158,112 @@ ul.menu{
 }
 
 .icon-swan{
-    width: 65px;
     img{
         width: 100%;
         height: 65px;
         object-fit: contain;
     }
+    .line-horizontal{
+        height: 2px;
+        width: 65px;
+        background-color: #DFEBE8;
+    }
+    .line-vertikal{
+        height: 45px;
+        width:2px;
+        background-color: #DFEBE8;
+        // margin-top: -16px;
+    }
+}
+
+.title-swan{
+    background-color: $light-green;
+    border-top:2px solid $light-green;
+    border-bottom:2px solid $light-green;
+    h2{
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        font-family: 'GreatVibes';
+        color:$cl-gray;
+        font-size: $size_2_5rem;
+    }
+}
+.story-line{
+    position: relative;
+    &:after{
+        content: "";
+        background: rgba(94, 154, 142, 0.1);
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .img-desc{
+        img{display: inline-block;}
+    }
+    .row{
+        .col-padding{
+            &:first-child{
+                padding: 0 45px 0 155px;
+            }
+            &:last-child{
+                padding: 0 155px 0 45px;
+            }
+            &.text-desc{
+                padding-top: $size-3rem;
+                border-top: 1px solid $light-green;
+            }
+        }
+    }
+}
+.padding-desc-left{
+    padding-left:100px;
+}
+.padding-desc-left{
+    padding-left:100px;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+.story-desc{
+    h3{
+        color:$green;
+        font-size: $size-1_22rem;
+        font-family: "Dosis-Book";
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .date{
+        font-family: "Dosis-Book";
+        color:$cl_semiblack;
+        font-weight: 600;
+        font-size: $font-14;
+        margin-bottom: 10px;
+    }
+    p{
+        font-family: "Dosis-Book";
+        color:$cl-gray_desc;
+        font-size: $size-1_2rem;
+        line-height: $size-1_8em;
+    }
+}
+
+.heart{
+    background-color: #9cc2bb;
+    width: 43px;
+    height: 43px;
+    line-height: 41px;
+    text-align: center;
+    border: 2px solid rgba(94, 154, 142, 0.5);
+    position: absolute;
+    left: -22px;
+    top: -22px;
 }
