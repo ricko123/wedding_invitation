@@ -1,6 +1,9 @@
 import React, {PropTypes, Component } from 'react';
 import { Container, Carousel,Row, Col} from "react-bootstrap";
 import { Parallax, Background } from 'react-parallax';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './style/Main.scss';
@@ -141,6 +144,7 @@ class App extends Component {
                                             </div>
                                         </Col>
                                     </Row>
+
                                     <Row className="mt-24">
                                         <Col md="6" className="col-padding">
                                             <div className="img-desc">
@@ -149,11 +153,56 @@ class App extends Component {
                                             
                                         </Col>
                                         <Col md="6" className="col-padding  text-desc">
-                                            <span className="heart rounded-full">
-                                            {/* <FontAwesomeIcon icon={faHome} /> */}
+                                            <span className="heart rounded-full z-10">
+                                                <FontAwesomeIcon icon={faHeart}  size="lg" color="white"/>
                                             </span>
                                             <div className="story-desc">
-                                                <h3>First Meet</h3>
+                                                <h3>First Date</h3>
+                                                <div className="date">Jun 09 2019</div>
+                                                <p>A wonderful serenity has taken possession of my entire soul,
+                                                like these sweet mornings of spring which I enjoy with my whole heart.
+                                                I am alone, and feel the charm of existence in this spot,
+                                                which was created for the bliss of souls like mine. I am so happy,
+                                                my dear friend,</p>
+                                            </div>
+                                        </Col>
+                                    </Row>
+
+                                    <Row className="mt-24">
+                                        <Col md="6" className="col-padding text-desc">
+                                            <div className="story-desc text-right">
+                                                <h3>Proposal</h3>
+                                                <div className="date">Jun 09 2019</div>
+                                                <p>A wonderful serenity has taken possession of my entire soul,
+                                                like these sweet mornings of spring which I enjoy with my whole heart.
+                                                I am alone, and feel the charm of existence in this spot,
+                                                which was created for the bliss of souls like mine. I am so happy,
+                                                my dear friend,</p>
+                                            </div>
+                                        </Col>
+                                        <Col md="6" className="col-padding">
+                                            <span className="heart rounded-full z-10">
+                                                <FontAwesomeIcon icon={faHeart}  size="lg" color="white"/>
+                                            </span>
+                                            <div className="img-desc">
+                                                <img className="img img-responsive" src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/story/img-1.jpg" alt=""/>
+                                            </div>
+                                        </Col>
+                                    </Row>
+
+                                    <Row className="mt-24">
+                                        <Col md="6" className="col-padding">
+                                            <div className="img-desc">
+                                                <img className="img img-responsive" src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/story/img-1.jpg" alt=""/>
+                                            </div>
+                                            
+                                        </Col>
+                                        <Col md="6" className="col-padding  text-desc">
+                                            <span className="heart rounded-full z-10">
+                                                <FontAwesomeIcon icon={faHeart}  size="lg" color="white"/>
+                                            </span>
+                                            <div className="story-desc">
+                                                <h3>ENAGAGEMENT</h3>
                                                 <div className="date">Jun 09 2019</div>
                                                 <p>A wonderful serenity has taken possession of my entire soul,
                                                 like these sweet mornings of spring which I enjoy with my whole heart.
@@ -168,6 +217,29 @@ class App extends Component {
                         </Row>
                     </Container>
                 </section>
+
+                <section>
+                    <Parallax bgImage={image3} blur={{ min: -1, max: 3 }}>
+                        <div style={{ height: 370 }} className="bg-black-opacity">
+                            <div className="insideStyles w-full">
+                                <Container className="px-5">
+                                    <Row>
+                                        <Col md="12" className="caption-parallax">
+                                            <div className="text-center">
+                                                <h2 className="text-6xl">
+                                                    <span className="dosisreg">We are going to...</span><br/>
+                                                    Celebrate our love
+                                                </h2>
+                                            </div>
+                                        </Col>
+                                       
+                                    </Row>
+                                </Container>
+                            </div>
+                        </div>
+                    </Parallax>
+                </section>
+
              </div>
         </div>
 

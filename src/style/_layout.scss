@@ -105,6 +105,9 @@ ul.menu{
         
     }
 }
+.dosisreg{
+    font-family: "Dosis-Book";
+}
 .box-caption{
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -235,7 +238,7 @@ ul.menu{
 .story-desc{
     h3{
         color:$green;
-        font-size: $size-1_22rem;
+        font-size: $size-1_6rem;
         font-family: "Dosis-Book";
         text-transform: uppercase;
         font-weight: 600;
