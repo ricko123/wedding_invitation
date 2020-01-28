@@ -251,14 +251,14 @@ ul.menu{
         font-size: $font-14;
         margin-bottom: 10px;
     }
-    p{
-        font-family: "Dosis-Book";
-        color:$cl-gray_desc;
-        font-size: $size-1_2rem;
-        line-height: $size-1_8em;
-    }
+   
 }
-
+p{
+    font-family: "Dosis-Book";
+    color:$cl-gray_desc;
+    font-size: $size-1_2rem;
+    line-height: $size-1_8em;
+}
 .heart{
     background-color: #9cc2bb;
     width: 43px;
@@ -269,4 +269,41 @@ ul.menu{
     position: absolute;
     left: -22px;
     top: -22px;
+}
+
+.details{
+    font-family: "Dosis-Book";
+    h3{
+        color:$cl_semiblack_type2;
+        font-size: $size-1_2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: $size-1rem;
+    }
+    ul{
+        margin-bottom: $size-1rem;
+        li{
+            margin-bottom: 5px;
+            color:$cl_green_gray;
+            font-size:$size-1rem;
+            i{
+                color:$green;
+            }
+            svg{
+                color:$green;
+            }           
+        }
+    }
+    p{
+        margin-bottom: $size-1rem;
+    }
+    a{
+        font-weight: 600;
+        color: $green;
+        font-size:$size-1_2rem;
+        text-decoration: none;
+        &:hover{
+            color:#34796c;
+        }
+    }
 }

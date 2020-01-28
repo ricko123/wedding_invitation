@@ -37,11 +37,13 @@ $size-1_3rem:1.3rem;
 $cl_white:#fff;
 $green:#5e9a8e;
 $bg-green-light:#F7FAF9;
+$cl_green_gray:#a9a9a9;
 $light-green:rgba(94, 154, 142, 0.1);
 $cl-gray:#848383;
 $cl-gray_desc:#767878;
 $nodecoration:none;
 $cl_semiblack:#333;
+$cl_semiblack_type2:#3e3e3e;
 // mixin
 @mixin font-face($style-name, $file, $family, $category:"") {
     $filepath: "fonts/" + $family + "/" + $file;
