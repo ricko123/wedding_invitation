@@ -307,3 +307,25 @@ p{
         }
     }
 }
+.menu-gallery{
+    font-family: "Dosis-Bold";
+    // font-weight: bold;
+    font-size: $size-1_22rem;
+    text-transform: uppercase;
+    li{
+        padding-right: 10px;
+        a{
+            text-decoration: none;
+            color: $cl_semiblack_type2;
+            &:hover{
+                color:#34796c;
+            }
+        }
+    }
+}
+
+.gallery-item{
+    img{
+        width: 100%;
+    }
+}
