@@ -12,7 +12,9 @@ import './style/Main.scss';
 import Welcome from "./components/Welcome";
 import Header from "./components/layouts/Header";
 import Countdown from "./components/pages/Countdown";
-import swan from "./img/swan.svg";
+// import IsotopeGallery from "./components/pages/IsotopeGallery";
+import Masonry from "./components/pages/Masonry";
+// import swan from "./img/swan.svg";
 import bird from "./img/bird.svg";
 const image3 ="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/countdown-bg.jpg";
 
@@ -283,7 +285,7 @@ class App extends Component {
                                             <p>
                                                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                                             </p>
-                                            <a href="">See Location <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <a href="">See Location <i className="fa fa-angle-right" aria-hidden="true"></i></a>
                                         </div>
                                     </Media.Body>
                                 </Media>
@@ -308,7 +310,7 @@ class App extends Component {
                                             <p>
                                                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                                             </p>
-                                            <a href="">See Location <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                            <a href="">See Location <i className="fa fa-angle-right" aria-hidden="true"></i></a>
                                         </div>
                                     </Media.Body>
                                 </Media>
@@ -390,6 +392,9 @@ class App extends Component {
                                         </div>
                                     </Col>
                                 </Row>
+                            </Col>
+                            <Col md="12" className="px-5">
+                                <Masonry/>
                             </Col>
                         </Row>
                     </Container>
