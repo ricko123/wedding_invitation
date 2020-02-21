@@ -66,6 +66,24 @@ $cl_semiblack_type2:#3e3e3e;
         }
     }
 }
+@mixin border-rad($radius){
+    border-radius: ($radius);
+    -moz-border-radius: ($radius);
+    -o-border-radius: ($radius);
+    -webkit-border-radius: ($radius);
+}
+@mixin filter($filter){
+    -webkit-filter: ($filter);
+    -moz-filter: ($filter);
+    -o-filter: ($filter);
+    -ms-filter:($filter);
+}
+@mixin transition($transition){
+    -webkit-transition: ($transition);
+    -moz-transition: ($transition);
+    -o-transition: ($transition);
+    transition: ($transition);
+}
 
 @include font-face('Dosis-SemiBold', 'Dosis-SemiBold', '', 'serif');
 @include font-face('Dosis-Book', 'Dosis-Book', '', 'serif');

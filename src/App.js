@@ -3,6 +3,8 @@ import { Container, Carousel,Row, Col,Media} from "react-bootstrap";
 import { Parallax, Background } from 'react-parallax';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart,faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+// import ReactFancyBox from 'react-fancybox';
+// import 'react-fancybox/lib/fancybox.css';
 // import { faClock } from '@fortawesome/free-solid-svg-icons';
 
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -19,6 +21,7 @@ import bird from "./img/bird.svg";
 const image3 ="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/countdown-bg.jpg";
 
 class App extends Component {
+   
     render() {
         const currentDate = new Date();
         const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
@@ -341,61 +344,55 @@ class App extends Component {
                                 </div>
                             </Col>
                             <Col md="12">
-                                <ul className="flex justify-start menu-gallery mb-5">
+                                <ul className="flex justify-start menu-gallery mb-4">
                                     <li><a href="#"  data-filter="*" className="active">All</a></li>
                                     <li><a href="#"  data-filter=".wedding" className="">Wedding</a></li>
                                     <li><a href="#"  data-filter=".caremony" className="">Caremony</a></li>
                                     <li><a href="#"  data-filter=".party" className="">Party</a></li>
                                 </ul>
                             </Col>
-                            <Col md="12">
-                                <Row>
-                                    <Col md="3" className="wedding">
-                                        <div className="gallery-item">
-                                            <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-1.jpg" alt=""></img>
-                                        </div>
-                                    </Col>
-                                    <Col md="3" className="wedding">
-                                        <div className="gallery-item">
-                                            <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-1.jpg" alt=""></img>
-                                        </div>
-                                    </Col>
-                                    <Col md="3" className="wedding">
-                                        <div className="gallery-item">
-                                            <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-1.jpg" alt=""></img>
-                                        </div>
-                                    </Col>
-                                    <Col md="3" className="wedding">
-                                        <div className="gallery-item">
-                                            <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-1.jpg" alt=""></img>
-                                        </div>
-                                    </Col>
-
-                                    <Col md="3" className="caremony">
-                                        <div className="gallery-item">
-                                            <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-2.jpg" alt=""></img>
-                                        </div>
-                                    </Col>
-                                    <Col md="3" className="caremony">
-                                        <div className="gallery-item">
-                                            <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-2.jpg" alt=""></img>
-                                        </div>
-                                    </Col>
-                                    <Col md="3" className="caremony">
-                                        <div className="gallery-item">
-                                            <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-2.jpg" alt=""></img>
-                                        </div>
-                                    </Col>
-                                    <Col md="3" className="caremony">
-                                        <div className="gallery-item">
-                                            <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-2.jpg" alt=""></img>
-                                        </div>
-                                    </Col>
-                                </Row>
+                            <Col md="12" className=" grid-layout">
+                                <div className="gallery-item">
+                                    {/* <ReactFancyBox thumbnail="https://loremflickr.com/320/240" image="https://www.w3schools.com/howto/img_forest.jpg"/> */}
+                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-1.jpg" alt=""></img>
+                                </div>
+                                <div className="gallery-item">
+                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-4.jpg" alt=""></img>
+                                </div>
+                                <div className="gallery-item">
+                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-9.jpg" alt=""></img>
+                                </div>
+                                
+                                <div className="gallery-item">
+                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-2.jpg" alt=""></img>
+                                </div>
+                                <div className="gallery-item">
+                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-5.jpg" alt=""></img>
+                                </div>
+                                <div className="gallery-item">
+                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-7.jpg" alt=""></img>
+                                </div>
+                                
+                                <div className="gallery-item three">
+                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-3.jpg" alt=""></img>
+                                </div>
+                                <div className="gallery-item">
+                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-6.jpg" alt=""></img>
+                                </div>
+                                <div className="gallery-item">
+                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-8.jpg" alt=""></img>
+                                </div>
+                            </Col>
+                            {/* <Col md="12" id="container" className="cols">
+                                <div className="box one"></div>
+                                <div className="box two"></div>
+                                <div className="box one"></div>
+                                <div className="box two"></div>
+                                <div className="box one"></div>
                             </Col>
                             <Col md="12" className="px-5">
                                 <Masonry/>
-                            </Col>
+                            </Col> */}
                         </Row>
                     </Container>
                 </section>
