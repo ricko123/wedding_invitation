@@ -41,6 +41,9 @@ ul.menu{
 .bg-black-opacity{
     background-color: rgba(0, 0, 0,0.3);
 }
+.bg-black-opacity2{
+    background-color: rgba(0, 0, 0, 0.6);
+}
 
 .box-caption-carousel{
     left: 0;
@@ -108,6 +111,12 @@ ul.menu{
 .dosisreg{
     font-family: "Dosis-Book";
 }
+.dosisbold{
+    font-family: "Dosis-Bold";
+}
+.dosismedium{
+    font-family: "Dosis-Medium";
+}
 .box-caption{
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -128,6 +137,10 @@ ul.menu{
     top: 25%;
     left: 0%;
     // transform: translate(-50%,-50%);
+}
+.inside-styleguest{
+    top:0px;
+    padding-top:5rem;
 }
 .row-min7{
     margin-left: -7.5px;
@@ -188,6 +201,18 @@ ul.menu{
         letter-spacing: 3px;
         font-family: 'GreatVibes';
         color:$cl-gray;
+        font-size: $size_2_5rem;
+    }
+}
+.title-swan-white{
+    background-color: $light-white;
+    border-top:2px solid $light-white;
+    border-bottom:2px solid $light-white;
+    h2{
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        font-family: 'GreatVibes';
+        color:$cl-white;
         font-size: $size_2_5rem;
     }
 }
@@ -425,3 +450,42 @@ p{
 //         top: 33%;
 //     }
 // }
+.btn-green{
+    background-color: $green;
+    color: $cl_white;
+}
+.gray{
+    fill: #333;
+    // background-color:#333;
+}
+
+.listguest{
+    background-color: $green;
+    .carousel{
+        .carousel-item{
+            height: 300px;
+            bottom: 0rem;
+            padding-top: $size-4rem;
+            h3{
+                font-size: $size-2rem;
+                font-family: "Dosis-Medium";
+            }
+            p{
+                padding-top: $size-1rem;
+                color:$cl-white;
+                font-family: "Dosis-Book";
+                font-style: italic;
+                
+            }
+            small{
+                font-size: $size-1rem;
+            }
+            .carousel-caption{
+                bottom:unset;
+            }
+        }
+        .carousel-control-next, .carousel-control-prev{
+            display: none;
+        }
+    }
+}

@@ -1,8 +1,8 @@
 import React, {PropTypes, Component } from 'react';
-import { Container, Carousel,Row, Col,Media} from "react-bootstrap";
+import { Container, Carousel,Row, Col} from "react-bootstrap";
 import { Parallax, Background } from 'react-parallax';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart,faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 // import ReactFancyBox from 'react-fancybox';
 // import 'react-fancybox/lib/fancybox.css';
 // import { faClock } from '@fortawesome/free-solid-svg-icons';
@@ -15,7 +15,11 @@ import Welcome from "./components/Welcome";
 import Header from "./components/layouts/Header";
 import Countdown from "./components/pages/Countdown";
 // import IsotopeGallery from "./components/pages/IsotopeGallery";
-import Masonry from "./components/pages/Masonry";
+// import Masonry from "./components/pages/Masonry";
+import Gallery from "./components/pages/Gallery";
+import WeddingEvent from "./components/pages/WeddingEvent";
+import GuestBook from "./components/pages/GuestBook";
+import ListGuestbook from "./components/pages/ListGuestbook";
 // import swan from "./img/swan.svg";
 import bird from "./img/bird.svg";
 const image3 ="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/countdown-bg.jpg";
@@ -27,9 +31,9 @@ class App extends Component {
         const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
         return ( 
         <div>
-            <Welcome title = "Ricko & Bunga" dear = "Ricko Prihartanto"judulLagu = "Judul lagu - Penyanyi" ></Welcome> 
+            <Welcome title = "Ricko & Bunga" dear = "Ricko Prihartanto"judulLagu = "Judul lagu - Penyanyi" /> 
             <div className="parallax">
-             <Header> </Header>
+             <Header/>
              
                 <section className="mb-5">
                     <div className="relative">
@@ -246,155 +250,20 @@ class App extends Component {
                     </Parallax>
                 </section>
                 
-                <section className="section-padding">
-                    <Container>
-                        <Row>
-                            <Col md="12">
-                                <div className="section-title flex justify-center mb-5">
-                                    <div className="icon-swan">
-                                        <img src={bird}/>
-                                        <div className="d-flex justify-content-center mt-min-16">
-                                            <div className="line-horizontal"></div>
-                                        </div>
-                                        <div className="d-flex justify-content-center">
-                                            <div className="line-vertikal"></div>
-                                        </div>
-                                        <div className="d-flex justify-content-center">
-                                            <div className="title-swan py-2 px-4">
-                                                <h2>Wedding Events</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col md="10" lg={{offset:"1"}} className="px-16">
-                                <Media className="mb-5">
-                                    <img className="mr-3" src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/events/img-1.jpg" alt="Generic placeholder"/>
-                                    <Media.Body>
-                                        <div className="details pl-4 pr-5">
-                                            <h3>Akad Nikah</h3>
-                                            <ul>
-                                                <li>
-                                                    <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" size="md"/>
-                                                    {/* <i class="fa fa-map-marker mr-2" aria-hidden="true"></i> */}
-                                                    <span>32 big bro road, Chanpai, London.</span>
-                                                </li>
-                                                <li>
-                                                    <i className="fa fa-clock-o mr-2"></i>
-                                                    <span>Nov 25 2017, 9AM - 5PM</span>
-                                                </li>
-                                                
-                                            </ul>
-                                            <p>
-                                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                            </p>
-                                            <a href="">See Location <i className="fa fa-angle-right" aria-hidden="true"></i></a>
-                                        </div>
-                                    </Media.Body>
-                                </Media>
-
-                                <Media className="">
-                                    <img className="mr-3" src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/events/img-1.jpg" alt="Generic placeholder"/>
-                                    <Media.Body>
-                                        <div className="details pl-4 pr-5">
-                                            <h3>Resepsi Pernikahan</h3>
-                                            <ul>
-                                                <li>
-                                                    <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" size="md"/>
-                                                    {/* <i class="fa fa-map-marker mr-2" aria-hidden="true"></i> */}
-                                                    <span>32 big bro road, Chanpai, London.</span>
-                                                </li>
-                                                <li>
-                                                    <i className="fa fa-clock-o mr-2"></i>
-                                                    <span>Nov 25 2017, 9AM - 5PM</span>
-                                                </li>
-                                                
-                                            </ul>
-                                            <p>
-                                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                            </p>
-                                            <a href="">See Location <i className="fa fa-angle-right" aria-hidden="true"></i></a>
-                                        </div>
-                                    </Media.Body>
-                                </Media>
-                            </Col>
-                        </Row>
-                    </Container>
+                <section className="section-padding pb-0">
+                    <WeddingEvent/>
                 </section>
 
+                <section className="section-padding pb-0">
+                    <Gallery/>
+                </section>
+                
+                <section className="section-padding pb-0" >
+                    <GuestBook/>
+                </section>
+                
                 <section>
-                    <Container>
-                        <Row>
-                            <Col md="12">
-                                <div className="section-title flex justify-center mb-5">
-                                    <div className="icon-swan">
-                                        <img src={bird}/>
-                                        <div className="d-flex justify-content-center mt-min-16">
-                                            <div className="line-horizontal"></div>
-                                        </div>
-                                        <div className="d-flex justify-content-center">
-                                            <div className="line-vertikal"></div>
-                                        </div>
-                                        <div className="d-flex justify-content-center">
-                                            <div className="title-swan py-2 px-4">
-                                                <h2>Our Gallery</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col md="12">
-                                <ul className="flex justify-start menu-gallery mb-4">
-                                    <li><a href="#"  data-filter="*" className="active">All</a></li>
-                                    <li><a href="#"  data-filter=".wedding" className="">Wedding</a></li>
-                                    <li><a href="#"  data-filter=".caremony" className="">Caremony</a></li>
-                                    <li><a href="#"  data-filter=".party" className="">Party</a></li>
-                                </ul>
-                            </Col>
-                            <Col md="12" className=" grid-layout">
-                                <div className="gallery-item">
-                                    {/* <ReactFancyBox thumbnail="https://loremflickr.com/320/240" image="https://www.w3schools.com/howto/img_forest.jpg"/> */}
-                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-1.jpg" alt=""></img>
-                                </div>
-                                <div className="gallery-item">
-                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-4.jpg" alt=""></img>
-                                </div>
-                                <div className="gallery-item">
-                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-9.jpg" alt=""></img>
-                                </div>
-                                
-                                <div className="gallery-item">
-                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-2.jpg" alt=""></img>
-                                </div>
-                                <div className="gallery-item">
-                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-5.jpg" alt=""></img>
-                                </div>
-                                <div className="gallery-item">
-                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-7.jpg" alt=""></img>
-                                </div>
-                                
-                                <div className="gallery-item three">
-                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-3.jpg" alt=""></img>
-                                </div>
-                                <div className="gallery-item">
-                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-6.jpg" alt=""></img>
-                                </div>
-                                <div className="gallery-item">
-                                    <img src="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/gallery/img-8.jpg" alt=""></img>
-                                </div>
-                            </Col>
-                            {/* <Col md="12" id="container" className="cols">
-                                <div className="box one"></div>
-                                <div className="box two"></div>
-                                <div className="box one"></div>
-                                <div className="box two"></div>
-                                <div className="box one"></div>
-                            </Col>
-                            <Col md="12" className="px-5">
-                                <Masonry/>
-                            </Col> */}
-                        </Row>
-                    </Container>
+                    <ListGuestbook/>
                 </section>
              </div>
         </div>
