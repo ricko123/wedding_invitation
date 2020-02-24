@@ -20,6 +20,7 @@ import Gallery from "./components/pages/Gallery";
 import WeddingEvent from "./components/pages/WeddingEvent";
 import GuestBook from "./components/pages/GuestBook";
 import ListGuestbook from "./components/pages/ListGuestbook";
+import Footer from "./components/layouts/Footer";
 // import swan from "./img/swan.svg";
 import bird from "./img/bird.svg";
 const image3 ="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/countdown-bg.jpg";
@@ -264,6 +265,10 @@ class App extends Component {
                 
                 <section>
                     <ListGuestbook/>
+                </section>
+                
+                <section>
+                    <Footer/>
                 </section>
              </div>
         </div>

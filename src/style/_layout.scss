@@ -489,3 +489,14 @@ p{
         }
     }
 }
+
+.footer{
+    background-color: $green-old;
+    p{
+        color:$cl_white;
+        font-size: $font-14;
+        a:hover{
+            color:$cl-white;
+        }
+    }
+}
