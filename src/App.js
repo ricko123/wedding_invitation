@@ -21,6 +21,7 @@ import WeddingEvent from "./components/pages/WeddingEvent";
 import GuestBook from "./components/pages/GuestBook";
 import ListGuestbook from "./components/pages/ListGuestbook";
 import Footer from "./components/layouts/Footer";
+
 // import swan from "./img/swan.svg";
 import bird from "./img/bird.svg";
 const image3 ="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/countdown-bg.jpg";
@@ -33,10 +34,10 @@ class App extends Component {
         return ( 
         <div>
             <Welcome title = "Ricko & Bunga" dear = "Ricko Prihartanto"judulLagu = "Judul lagu - Penyanyi" /> 
-            <div className="parallax">
+            <div className="parallax ">
              <Header/>
              
-                <section className="mb-5">
+                <section className="mb-5" id="home">
                     <div className="relative">
                         <Carousel className="carousel-fade ">
                             <Carousel.Item>
@@ -57,7 +58,7 @@ class App extends Component {
                     </div>
                 </section>
 
-                <section className="mb-5">
+                <section className="section-padding pb-0" id="couple">
                     <Container className="px-5">
                         <Row className="d-flex bg-green-light">
                             <Col md="6" className="px-0">
@@ -92,7 +93,7 @@ class App extends Component {
                     </Container>
                 </section>
 
-                <section>
+                <section id="wedding" className="section-padding pb-0">
                     <Parallax bgImage={image3} blur={{ min: -1, max: 3 }}>
                         <div style={{ height: 370 }} className="bg-black-opacity">
                             <div className="insideStyles w-full">
@@ -116,7 +117,7 @@ class App extends Component {
                     </Parallax>
                 </section>
 
-                <section className="section-padding">
+                <section className="section-padding" id="story">
                     <Container>
                         <Row>
                             <Col md="12">
@@ -251,15 +252,15 @@ class App extends Component {
                     </Parallax>
                 </section>
                 
-                <section className="section-padding pb-0">
+                <section className="section-padding pb-0" id="events">
                     <WeddingEvent/>
                 </section>
 
-                <section className="section-padding pb-0">
+                <section className="section-padding pb-0" id="gallery">
                     <Gallery/>
                 </section>
                 
-                <section className="section-padding pb-0" >
+                <section className="section-padding pb-0" id="guestbook" >
                     <GuestBook/>
                 </section>
                 
